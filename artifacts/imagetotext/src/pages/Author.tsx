@@ -48,8 +48,8 @@ const projects = [
 
 export default function Author() {
   useSEO({
-    title: "Rabeea Naseer — AI & SaaS Developer | ImageToText.fun",
-    description: "Rabeea Naseer is an AI and data-driven web systems developer and founder of NovatraTech. She builds and scales digital platforms combining software, SEO intelligence, and applied data modeling."
+    title: "Rabeea Naseer — Founder @ NovatraTech | AI & Data-Driven Systems Developer",
+    description: "Rabeea Naseer is an AI & data-driven systems developer and founder of NovatraTech, building scalable SaaS products, automated web infrastructures, and data-intelligent digital ecosystems."
   });
 
   return (
@@ -132,13 +132,12 @@ export default function Author() {
                 </div>
 
                 <h1 className="text-4xl md:text-5xl font-black text-white mb-2 tracking-tight">Rabeea Naseer</h1>
-                <p className="text-lg text-indigo-300 font-semibold mb-6">AI & Data-Driven SaaS, Automation & Web Systems Developer</p>
+                <p className="text-lg text-indigo-300 font-semibold mb-6">Founder @ NovatraTech · AI & Data-Driven Systems Developer building scalable SaaS, automation, and data-intelligent web ecosystems</p>
 
                 <p className="text-slate-300 leading-relaxed text-base max-w-2xl">
-                  Rabeea Naseer is an AI and data-driven web systems developer and the founder of{" "}
-                  <span className="text-white font-semibold">NovatraTech</span>. She builds and scales digital platforms by combining
-                  software development, search intelligence, and applied data modeling. Her work spans multi-domain web infrastructures,
-                  SaaS tools, automation systems, and content-driven platforms.
+                  Rabeea Naseer is an AI & data-driven systems developer and the founder of{" "}
+                  <span className="text-white font-semibold">NovatraTech</span>, focused on building scalable SaaS products,
+                  automated web infrastructures, and data-intelligent, revenue-generating digital ecosystems.
                 </p>
               </motion.div>
             </div>
@@ -174,16 +173,16 @@ export default function Author() {
 
               <div className="space-y-5 text-base leading-relaxed text-muted-foreground">
                 <p>
-                  She has independently developed and managed over <strong className="text-foreground">25 niche web assets</strong>, handling full-stack development, SEO architecture, analytics optimization, and monetization systems. Each project reflects her methodology of building compounding digital infrastructure — platforms that grow in authority and revenue over time.
+                  She has independently developed and managed <strong className="text-foreground">25+ niche web assets</strong>, combining full-stack engineering with SEO architecture, data analytics, and user behavior modeling to transform websites into <strong className="text-foreground">automated, performance-driven systems</strong> rather than static builds.
                 </p>
                 <p>
-                  Beyond infrastructure building, she actively explores <strong className="text-foreground">AI systems, data science applications, and scalable intelligent technologies</strong>. She maintains projects on GitHub and Kaggle focused on applied analytics and automation — ranging from NLP pipelines to web scraping frameworks.
+                  Her work sits at the intersection of <strong className="text-foreground">software engineering, search intelligence, and applied data science</strong>, integrating analytics pipelines and AI automation to optimize decision-making, user flows, and scalable growth.
                 </p>
                 <p>
-                  Her long-term focus is on designing <strong className="text-foreground">scalable AI-powered digital ecosystems</strong> that merge software engineering, data intelligence, and real-world impact. She approaches each project not as a product launch but as a long-lived digital asset — designed to serve users and rank authoritatively for years.
+                  She actively develops and publishes projects on <strong className="text-foreground">GitHub and Kaggle</strong>, focusing on applied analytics, predictive systems, and automation frameworks.
                 </p>
                 <p>
-                  ImageToText.fun is one such asset — a high-authority OCR platform built with technical depth, privacy-first architecture, and the kind of content infrastructure that earns lasting search visibility.
+                  Her long-term focus is on engineering <strong className="text-foreground">intelligent, self-optimizing digital ecosystems</strong>, where AI and data continuously enhance performance, scalability, and real-world impact. ImageToText.fun is one such ecosystem — a high-authority OCR platform built with technical depth, privacy-first architecture, and content infrastructure engineered for lasting search authority.
                 </p>
               </div>
 
