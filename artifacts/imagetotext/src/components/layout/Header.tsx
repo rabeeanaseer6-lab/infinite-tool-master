@@ -1,7 +1,7 @@
 import { Link, useLocation } from "wouter";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Scan, Menu, X, ChevronDown, ScanText, FileText, ImageIcon, PenLine, Monitor, Aperture, Receipt, CreditCard, Code2, Braces, Laugh, Scale, BookOpen, Car, Instagram, Newspaper, BookMarked, History, Info, Mail } from "lucide-react";
+import { Scan, Menu, ChevronDown, ScanText, FileText, ImageIcon, PenLine, Monitor, Aperture, Receipt, CreditCard, Code2, Braces, Laugh, Scale, BookOpen, Car, Instagram, Newspaper, BookMarked, History, Info, Mail, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { tools } from "@/data/tools";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -139,6 +139,7 @@ export function Header() {
                           { href: "/updates", label: "Changelog", icon: <History className="h-4 w-4" /> },
                           { href: "/about", label: "About Us", icon: <Info className="h-4 w-4" /> },
                           { href: "/contact", label: "Contact", icon: <Mail className="h-4 w-4" /> },
+                          { href: "/author/rabeea-naseer", label: "Author Profile", icon: <User className="h-4 w-4" /> },
                         ].map(item => (
                           <Link key={item.href} href={item.href}>
                             <div className="flex items-center gap-2.5 px-2 py-2 rounded-lg hover:bg-accent text-sm font-medium cursor-pointer">
@@ -256,6 +257,7 @@ export function Header() {
                       { href: "/wiki", title: "OCR Wiki", desc: "Definitions of 10 essential OCR and computer vision terms.", icon: <BookMarked className="h-5 w-5" />, color: "from-purple-500/10 to-violet-500/10 border-purple-500/10" },
                       { href: "/updates", title: "Changelog", desc: "See weekly algorithm improvements and new feature releases.", icon: <History className="h-5 w-5" />, color: "from-emerald-500/10 to-teal-500/10 border-emerald-500/10" },
                       { href: "/about", title: "About Us", desc: "Our story, mission, and commitment to free, private OCR.", icon: <Info className="h-5 w-5" />, color: "from-orange-500/10 to-amber-500/10 border-orange-500/10" },
+                      { href: "/author/rabeea-naseer", title: "Author", desc: "Rabeea Naseer — AI developer & founder of NovatraTech.", icon: <User className="h-5 w-5" />, color: "from-violet-500/10 to-indigo-500/10 border-violet-500/10" },
                     ].map(item => (
                       <Link key={item.href} href={item.href}>
                         <div className={`p-4 rounded-xl border bg-gradient-to-br ${item.color} hover:scale-[1.02] transition-transform cursor-pointer`}>

@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { tools } from "@/data/tools";
-import { Scan, Github, Twitter, Linkedin } from "lucide-react";
+import { Scan, Github, Twitter, Linkedin, ExternalLink } from "lucide-react";
 
 export function Footer() {
   const popularTools = tools.slice(0, 8);
@@ -10,35 +10,45 @@ export function Footer() {
     <footer className="border-t bg-muted/40 pt-16 pb-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+          {/* Brand column */}
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-2 mb-4 group">
-              <div className="bg-primary/10 p-2 rounded-lg group-hover:bg-primary/20 transition-colors">
-                <Scan className="h-5 w-5 text-primary" />
+            <Link href="/" className="flex items-center gap-2 mb-1 group">
+              <div className="bg-primary p-1.5 rounded-lg group-hover:bg-primary/90 transition-colors">
+                <Scan className="h-4 w-4 text-primary-foreground" />
               </div>
-              <span className="font-bold tracking-tight">ImageToText.fun</span>
+              <span className="font-black tracking-tight text-base">ImageToText<span className="text-primary">.fun</span></span>
             </Link>
-            <p className="text-sm text-muted-foreground mb-6">
-              The world's fastest, 100% private, client-side OCR tool. Extract text from any image instantly in your browser.
+            <p className="text-xs text-muted-foreground mb-1 mt-2">A product by</p>
+            <span className="inline-block font-bold text-sm text-foreground">NovatraTech</span>
+            <p className="text-xs text-muted-foreground mt-3 mb-5 leading-relaxed">
+              The world's fastest, 100% private, client-side OCR tool. Your images never leave your browser.
             </p>
-            <div className="flex gap-4">
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors" data-testid="link-twitter">
-                <Twitter className="h-5 w-5" />
+            <div className="flex gap-3 mb-5">
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-muted hover:bg-primary/10 hover:text-primary rounded-lg flex items-center justify-center text-muted-foreground transition-colors" data-testid="link-footer-twitter">
+                <Twitter className="h-4 w-4" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors" data-testid="link-linkedin">
-                <Linkedin className="h-5 w-5" />
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-muted hover:bg-primary/10 hover:text-primary rounded-lg flex items-center justify-center text-muted-foreground transition-colors" data-testid="link-footer-linkedin">
+                <Linkedin className="h-4 w-4" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors" data-testid="link-github">
-                <Github className="h-5 w-5" />
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-muted hover:bg-primary/10 hover:text-primary rounded-lg flex items-center justify-center text-muted-foreground transition-colors" data-testid="link-footer-github">
+                <Github className="h-4 w-4" />
+              </a>
+              <a href="https://kaggle.com" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-muted hover:bg-primary/10 hover:text-primary rounded-lg flex items-center justify-center text-muted-foreground transition-colors" data-testid="link-footer-kaggle">
+                <ExternalLink className="h-4 w-4" />
               </a>
             </div>
+            <Link href="/author/rabeea-naseer" className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary hover:underline" data-testid="link-footer-author">
+              About the Author
+            </Link>
           </div>
 
+          {/* Popular tools */}
           <div>
-            <h3 className="font-semibold mb-4">Popular Tools</h3>
-            <ul className="space-y-3 text-sm">
+            <h3 className="font-bold text-sm mb-4">Popular Tools</h3>
+            <ul className="space-y-2.5 text-sm">
               {popularTools.map(tool => (
                 <li key={tool.path}>
-                  <Link href={tool.path} className="text-muted-foreground hover:text-foreground transition-colors">
+                  <Link href={tool.path} className="text-muted-foreground hover:text-foreground hover:text-primary transition-colors text-xs">
                     {tool.name}
                   </Link>
                 </li>
@@ -46,12 +56,13 @@ export function Footer() {
             </ul>
           </div>
 
+          {/* More tools */}
           <div>
-            <h3 className="font-semibold mb-4">More Tools</h3>
-            <ul className="space-y-3 text-sm">
+            <h3 className="font-bold text-sm mb-4">More Tools</h3>
+            <ul className="space-y-2.5 text-sm">
               {moreTools.map(tool => (
                 <li key={tool.path}>
-                  <Link href={tool.path} className="text-muted-foreground hover:text-foreground transition-colors">
+                  <Link href={tool.path} className="text-muted-foreground hover:text-foreground hover:text-primary transition-colors text-xs">
                     {tool.name}
                   </Link>
                 </li>
@@ -59,30 +70,43 @@ export function Footer() {
             </ul>
           </div>
 
+          {/* Resources */}
           <div>
-            <h3 className="font-semibold mb-4">Resources</h3>
-            <ul className="space-y-3 text-sm">
-              <li><Link href="/blog" className="text-muted-foreground hover:text-foreground transition-colors">Blog</Link></li>
-              <li><Link href="/wiki" className="text-muted-foreground hover:text-foreground transition-colors">OCR Wiki</Link></li>
-              <li><Link href="/updates" className="text-muted-foreground hover:text-foreground transition-colors">Changelog</Link></li>
-              <li><Link href="/about" className="text-muted-foreground hover:text-foreground transition-colors">About Us</Link></li>
-              <li><Link href="/contact" className="text-muted-foreground hover:text-foreground transition-colors">Contact</Link></li>
+            <h3 className="font-bold text-sm mb-4">Resources</h3>
+            <ul className="space-y-2.5 text-sm">
+              <li><Link href="/blog" className="text-muted-foreground hover:text-primary transition-colors text-xs">Blog</Link></li>
+              <li><Link href="/wiki" className="text-muted-foreground hover:text-primary transition-colors text-xs">OCR Wiki</Link></li>
+              <li><Link href="/updates" className="text-muted-foreground hover:text-primary transition-colors text-xs">Changelog</Link></li>
+              <li><Link href="/about" className="text-muted-foreground hover:text-primary transition-colors text-xs">About Us</Link></li>
+              <li><Link href="/contact" className="text-muted-foreground hover:text-primary transition-colors text-xs">Contact</Link></li>
+              <li><Link href="/author/rabeea-naseer" className="text-muted-foreground hover:text-primary transition-colors text-xs">Author Profile</Link></li>
             </ul>
           </div>
 
+          {/* Legal */}
           <div>
-            <h3 className="font-semibold mb-4">Legal</h3>
-            <ul className="space-y-3 text-sm">
-              <li><Link href="/privacy" className="text-muted-foreground hover:text-foreground transition-colors">Privacy Policy</Link></li>
-              <li><Link href="/terms" className="text-muted-foreground hover:text-foreground transition-colors">Terms of Service</Link></li>
-              <li><Link href="/disclaimer" className="text-muted-foreground hover:text-foreground transition-colors">Disclaimer</Link></li>
+            <h3 className="font-bold text-sm mb-4">Legal</h3>
+            <ul className="space-y-2.5 text-sm">
+              <li><Link href="/privacy" className="text-muted-foreground hover:text-primary transition-colors text-xs">Privacy Policy</Link></li>
+              <li><Link href="/terms" className="text-muted-foreground hover:text-primary transition-colors text-xs">Terms of Service</Link></li>
+              <li><Link href="/disclaimer" className="text-muted-foreground hover:text-primary transition-colors text-xs">Disclaimer</Link></li>
             </ul>
+
+            {/* Site identity mini card */}
+            <div className="mt-8 p-4 rounded-xl bg-gradient-to-br from-primary/10 to-cyan-500/10 border border-primary/10">
+              <p className="text-xs font-bold text-foreground mb-1">Built by</p>
+              <p className="text-sm font-black">Rabeea Naseer</p>
+              <p className="text-xs text-muted-foreground mt-0.5">Founder, NovatraTech</p>
+              <Link href="/author/rabeea-naseer">
+                <span className="mt-2 inline-block text-xs font-semibold text-primary hover:underline cursor-pointer">View profile →</span>
+              </Link>
+            </div>
           </div>
         </div>
 
-        <div className="border-t pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} ImageToText.fun. All rights reserved.</p>
-          <p>Processing text in browser since 2022.</p>
+        <div className="border-t pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-muted-foreground">
+          <p>© {new Date().getFullYear()} ImageToText.fun · A <span className="font-semibold text-foreground">NovatraTech</span> product. All rights reserved.</p>
+          <p>Processing text in browser since 2022 · Built by <Link href="/author/rabeea-naseer" className="font-semibold text-foreground hover:text-primary transition-colors">Rabeea Naseer</Link></p>
         </div>
       </div>
     </footer>

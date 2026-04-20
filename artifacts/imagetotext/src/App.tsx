@@ -16,6 +16,7 @@ import Terms from "@/pages/Terms";
 import Disclaimer from "@/pages/Disclaimer";
 import Contact from "@/pages/Contact";
 import ToolPage from "@/pages/ToolPage";
+import Author from "@/pages/Author";
 import { tools } from "@/data/tools";
 
 const queryClient = new QueryClient();
@@ -34,6 +35,7 @@ function Router() {
       <Route path="/terms" component={Terms} />
       <Route path="/disclaimer" component={Disclaimer} />
       <Route path="/contact" component={Contact} />
+      <Route path="/author/rabeea-naseer" component={Author} />
       
       {tools.map(tool => (
         <Route key={tool.path} path={tool.path}>
