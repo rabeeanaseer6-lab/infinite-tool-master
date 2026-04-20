@@ -16,6 +16,25 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 - **API codegen**: Orval (from OpenAPI spec)
 - **Build**: esbuild (CJS bundle)
 
+## Artifacts
+
+### ImageToText.fun OCR Platform (`artifacts/imagetotext`)
+- **Type**: react-vite (frontend-only, no backend)
+- **Preview path**: `/`
+- **Purpose**: High-authority multi-page OCR utility platform
+- **OCR**: Tesseract.js (100% client-side, no server uploads)
+- **PDF export**: jsPDF
+- **Routing**: wouter
+- **Animations**: framer-motion
+- **Features**:
+  - Universal OCR engine with drag-and-drop, URL input, clipboard paste
+  - 50+ language support
+  - 15+ dedicated tool pages (JPG to Word, Handwriting OCR, Receipt to Excel, etc.)
+  - Blog library (15+ articles), Wiki hub (10 terms), Changelog
+  - Mega-menu navigation + fat 5-column footer
+  - Legal pages: Privacy, Terms, Disclaimer, Contact
+  - SEO-optimized with unique titles/meta on every page
+
 ## Key Commands
 
 - `pnpm run typecheck` — full typecheck across all packages
