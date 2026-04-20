@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { tools } from "@/data/tools";
-import { Scan, Github, Twitter, Linkedin, ExternalLink } from "lucide-react";
+import { Scan, Github, Twitter, Linkedin, ExternalLink, Link2 } from "lucide-react";
 
 export function Footer() {
   const popularTools = tools.slice(0, 8);
@@ -37,9 +37,14 @@ export function Footer() {
                 <ExternalLink className="h-4 w-4" />
               </a>
             </div>
-            <Link href="/author/rabeea-naseer" className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary hover:underline" data-testid="link-footer-author">
-              About the Author
-            </Link>
+            <div className="flex flex-col gap-2">
+              <Link href="/author/rabeea-naseer" className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary hover:underline" data-testid="link-footer-author">
+                About the Author
+              </Link>
+              <a href="https://rabeeanaseer.online" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-xs font-semibold text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-portfolio">
+                <Link2 className="h-3 w-3" /> rabeeanaseer.online
+              </a>
+            </div>
           </div>
 
           {/* Popular tools */}

@@ -9,7 +9,7 @@ import { useRef, useState, useEffect } from "react";
 import {
   Github, Linkedin, ExternalLink, ArrowRight, ArrowLeft,
   BookOpen, Globe, Brain, Code2, Database, TrendingUp,
-  Layers, ChevronRight, Zap, Star, BarChart2, Calendar, Clock
+  Layers, ChevronRight, Zap, Star, BarChart2, Calendar, Clock, Link2
 } from "lucide-react";
 
 const blogGradients = [
@@ -170,6 +170,11 @@ export default function Author() {
                 </p>
 
                 <div className="flex flex-wrap gap-3">
+                  <a href="https://rabeeanaseer.online" target="_blank" rel="noopener noreferrer" data-testid="link-hero-portfolio">
+                    <Button className="rounded-xl bg-gradient-to-r from-violet-600 to-cyan-600 hover:from-violet-700 hover:to-cyan-700 text-white font-bold gap-2 shadow-lg shadow-violet-900/30 border-0">
+                      <Link2 className="h-4 w-4" /> Portfolio
+                    </Button>
+                  </a>
                   <a href="https://www.linkedin.com/in/rabeea-naseer-045b4a337/" target="_blank" rel="noopener noreferrer" data-testid="link-hero-linkedin">
                     <Button className="rounded-xl bg-[#0077b5] hover:bg-[#006399] text-white font-bold gap-2 shadow-lg shadow-blue-900/30">
                       <Linkedin className="h-4 w-4" /> LinkedIn
@@ -223,11 +228,19 @@ export default function Author() {
                   </div>
 
                   {/* Skill pills */}
-                  <div className="flex flex-wrap gap-1.5">
+                  <div className="flex flex-wrap gap-1.5 mb-4">
                     {["AI Systems", "Python", "React", "SEO", "SaaS", "Analytics"].map(s => (
                       <span key={s} className="px-2.5 py-1 rounded-full text-xs font-semibold bg-violet-500/20 text-violet-300 border border-violet-500/20">{s}</span>
                     ))}
                   </div>
+
+                  {/* Portfolio link */}
+                  <a href="https://rabeeanaseer.online" target="_blank" rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-violet-500/20 to-cyan-500/20 border border-violet-500/20 hover:border-violet-400/40 transition-colors group">
+                    <Link2 className="h-4 w-4 text-violet-400 shrink-0" />
+                    <span className="text-sm font-semibold text-white/80 group-hover:text-white transition-colors">rabeeanaseer.online</span>
+                    <ExternalLink className="h-3 w-3 text-white/40 ml-auto group-hover:text-white/70 transition-colors" />
+                  </a>
                 </div>
 
                 {/* Floating mini cards */}
@@ -353,10 +366,15 @@ export default function Author() {
                 <p>Her long-term focus: engineering <strong className="text-foreground">intelligent, self-optimizing digital ecosystems</strong> where AI and data continuously enhance performance and impact.</p>
               </div>
 
-              <div className="mt-8 flex gap-3">
+              <div className="mt-8 flex flex-wrap gap-3">
+                <a href="https://rabeeanaseer.online" target="_blank" rel="noopener noreferrer" data-testid="link-about-portfolio">
+                  <Button className="rounded-xl bg-gradient-to-r from-violet-600 to-cyan-600 hover:from-violet-700 hover:to-cyan-700 text-white font-bold gap-2 border-0">
+                    <Link2 className="h-4 w-4" /> Portfolio
+                  </Button>
+                </a>
                 <a href="https://www.linkedin.com/in/rabeea-naseer-045b4a337/" target="_blank" rel="noopener noreferrer">
                   <Button className="rounded-xl bg-[#0077b5] hover:bg-[#006399] text-white font-bold gap-2" data-testid="link-about-linkedin">
-                    <Linkedin className="h-4 w-4" /> Connect
+                    <Linkedin className="h-4 w-4" /> LinkedIn
                   </Button>
                 </a>
                 <a href="https://github.com/rabeeanaseer6-lab" target="_blank" rel="noopener noreferrer">
@@ -558,14 +576,19 @@ export default function Author() {
                 Explore her work on GitHub, connect on LinkedIn, or read her OCR and AI articles on this platform.
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
+                <a href="https://rabeeanaseer.online" target="_blank" rel="noopener noreferrer" data-testid="link-cta-portfolio">
+                  <Button size="lg" className="rounded-xl bg-gradient-to-r from-violet-500 to-cyan-500 hover:from-violet-600 hover:to-cyan-600 text-white font-bold gap-2 px-8 shadow-lg shadow-violet-900/40 border-0">
+                    <Link2 className="h-5 w-5" /> rabeeanaseer.online
+                  </Button>
+                </a>
                 <a href="https://www.linkedin.com/in/rabeea-naseer-045b4a337/" target="_blank" rel="noopener noreferrer" data-testid="link-cta-linkedin">
                   <Button size="lg" className="rounded-xl bg-[#0077b5] hover:bg-[#006399] text-white font-bold gap-2 px-8 shadow-lg shadow-blue-900/40">
-                    <Linkedin className="h-5 w-5" /> LinkedIn Profile
+                    <Linkedin className="h-5 w-5" /> LinkedIn
                   </Button>
                 </a>
                 <a href="https://github.com/rabeeanaseer6-lab" target="_blank" rel="noopener noreferrer" data-testid="link-cta-github">
                   <Button size="lg" variant="outline" className="rounded-xl border-white/20 text-white hover:bg-white/10 font-bold gap-2 px-8 backdrop-blur-sm">
-                    <Github className="h-5 w-5" /> GitHub Projects
+                    <Github className="h-5 w-5" /> GitHub
                   </Button>
                 </a>
               </div>
