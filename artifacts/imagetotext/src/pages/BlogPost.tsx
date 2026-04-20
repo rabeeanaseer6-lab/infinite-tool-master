@@ -149,10 +149,10 @@ export default function BlogPost() {
                       Founder of NovatraTech. She builds and scales digital platforms by combining software development, search intelligence, and applied data modeling across 25+ web assets.
                     </p>
                     <div className="mt-3 flex items-center gap-3">
-                      <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
+                      <a href="https://github.com/rabeeanaseer6-lab" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
                         <Github className="h-4 w-4" />
                       </a>
-                      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
+                      <a href="https://www.linkedin.com/in/rabeea-naseer-045b4a337/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
                         <Linkedin className="h-4 w-4" />
                       </a>
                       <Link href="/author/rabeea-naseer">

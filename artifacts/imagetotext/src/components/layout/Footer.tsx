@@ -27,10 +27,10 @@ export function Footer() {
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-muted hover:bg-primary/10 hover:text-primary rounded-lg flex items-center justify-center text-muted-foreground transition-colors" data-testid="link-footer-twitter">
                 <Twitter className="h-4 w-4" />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-muted hover:bg-primary/10 hover:text-primary rounded-lg flex items-center justify-center text-muted-foreground transition-colors" data-testid="link-footer-linkedin">
+              <a href="https://www.linkedin.com/in/rabeea-naseer-045b4a337/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-muted hover:bg-primary/10 hover:text-primary rounded-lg flex items-center justify-center text-muted-foreground transition-colors" data-testid="link-footer-linkedin">
                 <Linkedin className="h-4 w-4" />
               </a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-muted hover:bg-primary/10 hover:text-primary rounded-lg flex items-center justify-center text-muted-foreground transition-colors" data-testid="link-footer-github">
+              <a href="https://github.com/rabeeanaseer6-lab" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-muted hover:bg-primary/10 hover:text-primary rounded-lg flex items-center justify-center text-muted-foreground transition-colors" data-testid="link-footer-github">
                 <Github className="h-4 w-4" />
               </a>
               <a href="https://kaggle.com" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-muted hover:bg-primary/10 hover:text-primary rounded-lg flex items-center justify-center text-muted-foreground transition-colors" data-testid="link-footer-kaggle">
