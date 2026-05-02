@@ -57,19 +57,23 @@ The platform is designed for real-world OCR workflows, from basic image-to-text 
 
 ### Homepage
 
-![ImageToText.fun Homepage](./screenshots/homepage.png)
+![ImageToText.fun Homepage]<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/f6dc82f8-1710-4e0f-847e-039bc7ace335" />
+
 
 ### OCR Workspace
 
-![OCR Workspace](./screenshots/ocr-workspace.png)
+![OCR Workspace]<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/32ddd7c3-b5cc-4248-88fa-43b7d8933bc1" />
+
 
 ### Tool Selection
 
-![Tool Selection](./screenshots/tool-selection.png)
+![Tool Selection]<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/84dd4bda-4e5a-46d1-a7d9-8601ec387444" />
+
 
 ### Extracted Text Result
 
-![Extracted Text Result](./screenshots/extracted-text.png)
+![Extracted Text Result]<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/e9f36863-b62e-454f-a385-937bd7d63f5a" />
+
 
 ### Recommended folder structure
 
