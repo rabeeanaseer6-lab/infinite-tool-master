@@ -53,26 +53,26 @@ The platform is designed for real-world OCR workflows, from basic image-to-text 
 
 ## Screenshots
 
-> Add your screenshots after uploading them to the repository.
+
 
 ### Homepage
 
-![ImageToText.fun Homepage]<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/f6dc82f8-1710-4e0f-847e-039bc7ace335" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/f6dc82f8-1710-4e0f-847e-039bc7ace335" />
 
 
 ### OCR Workspace
 
-![OCR Workspace]<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/32ddd7c3-b5cc-4248-88fa-43b7d8933bc1" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/32ddd7c3-b5cc-4248-88fa-43b7d8933bc1" />
 
 
 ### Tool Selection
 
-![Tool Selection]<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/84dd4bda-4e5a-46d1-a7d9-8601ec387444" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/84dd4bda-4e5a-46d1-a7d9-8601ec387444" />
 
 
 ### Extracted Text Result
 
-![Extracted Text Result]<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/e9f36863-b62e-454f-a385-937bd7d63f5a" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/e9f36863-b62e-454f-a385-937bd7d63f5a" />
 
 
 ### Recommended folder structure
