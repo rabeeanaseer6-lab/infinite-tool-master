@@ -30,7 +30,7 @@
 </p>
 
 <p align="center">
-  ImageToText.fun is a modern OCR web app for screenshots, scanned documents, receipts, handwriting, legal pages, and multilingual text extraction. Everything runs locally in the browser, so users get fast results without sending images to a server.
+  ImageToText.fun is a modern open source OCR web app for screenshots, scanned documents, receipts, handwriting, legal pages, and multilingual text extraction. Everything runs locally in the browser, so users get fast results without sending images to a server.
 </p>
 
 ---
